@@ -1,0 +1,90 @@
+.container img {
+  max-width: 100%;
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+}
+.container {
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .container {
+    min-height: 100vh;
+    min-width: 50vh;
+  }
+  .container img {
+    width: 500px;
+    height: 300px;
+  }
+}
+button {
+  background-color: transparent;
+  color: #00ffd1;
+  border: 2px solid #00ffd1;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00ffd1;
+}
+button .block {
+  cursor: not-allowed;
+}
+button:hover {
+  background-color: #00ffd1;
+  color: #000;
+  box-shadow: 0 0 25px #00ffd1;
+}
+.container .right {
+  text-align: right;
+}
+.container .left {
+  text-align: left;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxes ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxes li {
+  background-color: #888;
+  padding: 10px;
+  list-style: none;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.boxes .active {
+  background-color: #00ffd1;
+}
+.boxes .right {
+  margin-left: auto;
+}
+.boxes .left {
+  margin-right: auto;
+}
+.neon-anim {
+  animation: neonFlash 0.4s ease-out;
+}
+
+@keyframes neonFlash {
+  0% {
+    opacity: 0.5;
+    filter: drop-shadow(0 0 20px #00ffd1) blur(2px);
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 0px transparent) blur(0px);
+    transform: scale(1);
+  }
+}
