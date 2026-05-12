@@ -8,4 +8,4 @@ Pagination System: Numbered indicators allow users to jump directly to a specifi
 
 Active State Tracking: Clearly highlights the current slide number for better UX. 
 
-to visit : 
+to visit : https://ahmed207-dev.github.io/good-slider/
